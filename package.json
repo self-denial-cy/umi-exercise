@@ -1,23 +1,33 @@
 {
   "private": true,
   "scripts": {
-    "dev": "umi dev",
     "build": "umi build",
+    "commit": "cz",
+    "dev": "umi dev",
     "postinstall": "umi setup",
+    "prepare": "husky install",
     "setup": "umi setup",
-    "start": "npm run dev",
-    "prepare": "husky install"
+    "start": "npm run dev"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   },
   "dependencies": {
     "umi": "^4.0.75"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "@commitlint/cz-commitlint": "^17.5.0",
     "@types/mockjs": "^1.0.7",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@umijs/lint": "^4.0.75",
     "@umijs/plugins": "^4.0.75",
     "@unocss/cli": "^0.55.0",
+    "commitizen": "^4.3.0",
     "eslint": "^8.47.0",
     "husky": "^8",
     "lint-staged": "^13",
@@ -26,7 +36,7 @@
     "prettier-plugin-organize-imports": "^3.2.2",
     "prettier-plugin-packagejson": "^2.4.3",
     "stylelint": "^15.10.2",
-    "typescript": "^4",
+    "typescript": "^4.9.5",
     "unocss": "^0.55.0"
   }
 }

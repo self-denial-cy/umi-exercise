@@ -1,3 +1,3 @@
 export default function Loading() {
-  return <>加载中...</>
+  return <>加载中...</>;
 }

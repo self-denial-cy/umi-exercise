@@ -1,3 +1,4 @@
 module.exports = {
-  extends: require.resolve('umi/eslint')
-}
+  root: true,
+  extends: [require.resolve('umi/eslint')],
+};

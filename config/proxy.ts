@@ -1,11 +1,11 @@
-import { defineConfig } from "umi";
+import { defineConfig } from 'umi';
 
 export default defineConfig({
   proxy: {
     '/api/todos': {
-      'target': 'https://jsonplaceholder.typicode.com',
-      'changeOrigin': true,
-      'pathRewrite': { '^/api': '' },
+      target: 'https://jsonplaceholder.typicode.com',
+      changeOrigin: true,
+      pathRewrite: { '^/api': '' },
     },
-  }
-})
+  },
+});
